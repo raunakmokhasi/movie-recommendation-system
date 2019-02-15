@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie List</title>
+</head>
+<body bgcolor= "#E6E6FA">
+	<h2 style="color:darkred;" align = "center"> item item CF </h1>
+	<a href="/matrix.html">Matrix</a>
+
+		
+	<h5><strong>-----------------------------------------------------------------------------------</strong></h5>
+	{% for item in data %}
+			<tr>
+			<td><input type="hidden" name="item" value="{{item}}" /></td>
+
+
+			<td> <img src = "{{item['Movie_Image']}}" height = "200" width = "150">
+				<br><br>  </td>
+			<td><h2><strong>	{{ item['Movie_Name'] }} </h2></td>
+			<td>	{{ item['Movie_Rating'] }} </td>
+			<br>
+			<td>	{{ item['Movie_Year'] }}  <strong></td>
+			<br><br>
+			<td>	{{ item['Movie_Synopsis'] }}</td>
+			<br>
+			<br>
+			<td>-----------------------------------------------------------------------------------</td>
+			<br>
+			<br>
+			<br>
+			<br>
+
+
+			</tr>
+	{% endfor %}
+	<br>
+	<br>
+	
+
+</body>
+</html>
+
