@@ -14,10 +14,6 @@ The web application with a user interface was built using Bootstrap (on a Flask 
 
 To run the whole web application run app.py. And then go to http://127.0.0.1:5000/login.
 
-To access the login page-
-Username - precog
-Password - pass
-
 Then you'll get a list of all the movies.
 
 On the next page you'll get a list of 5 movies to rate. After submitting your ratings you'll get a list of 4 movies from each of the collaborative filtering methods.
